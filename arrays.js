@@ -14,15 +14,20 @@ function inventory(array,quantities){
 }
 console.log(inventory)
 // Write a function to calculate the total number of items in the inventory.
+let sum=0
 function total(){
-        sum +=inventory.length
-        console.log(sum);
-    }
+   let counting=quantities.reduce((previousvalue,currrentvalue)=> previousvalue+ currrentvalue,
+sum);
+console.log(counting)
+  
+}
+total()
     // Write a function to find the item with the lowest stock quantity.
  function lowest(){
-    Math.min(inventory)
- }
- console.log(inventory)                               
+  let lowest_quantity=  Math.min(...quantities)
+  console.log(lowest_quantity)
+}
+lowest()                              
 
   
 
